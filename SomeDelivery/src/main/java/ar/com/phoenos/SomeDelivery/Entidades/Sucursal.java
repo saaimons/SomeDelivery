@@ -20,13 +20,14 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Sucursales{
+public class Sucursal {
     @Id
     @Column(name = "id", nullable = false)
     private String id;
-    private String Domicilio;
+    private String telefono;
+    private String direccion;
     private Date apertura;
     private Date cierre;
-
+    private Integer likes;
 
 }

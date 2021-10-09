@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{titulo.pagina}"></title>
+<!--    Tarea para mañana: armar un template HTML :D -->
+</head>
+<body>
+<div class="container-fluid col-md-8">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tienda</th>
+            <th scope="col">Borrar</th>
+
+        </tr>
+        </thead>
+        <tbody>
+<!--        <tr th:each="item:${lista}">-->
+<!--            <th scope="row" th:text="${item.getId()}">1</th>-->
+<!--            <td th:text="${item.getNombre()}">Mark</td>-->
+<!--            <td >-->
+<!--                <div class="form-check form-switch">-->
+<!--                    <input class="form-check-input" type="checkbox" th:checked="${item.isActivado()}" id="flexSwitchCheckDefault">-->
+<!--                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>-->
+<!--                </div>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <form th:action="'/categorias/delete/'+${item.getId()}" method="POST">-->
+<!--                    <button  type="submit" class="btn btn-danger"><i-->
+<!--                            class="far fa-trash-alt"></i></button>-->
+<!--                </form>-->
+<!--            </td>-->
+<!--        </tr>-->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

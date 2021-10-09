@@ -12,7 +12,6 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@ToString
 public class TipoComida {
     @Id
     @Column(name = "id", nullable = false)

@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.List;
@@ -28,12 +29,18 @@ import java.util.List;
 public class Restaurante {
     @Id
     @Column(name = "id", nullable = false)
+    @GenericGenerator(strategy = "uuid2",name = "uuid")
+    @GeneratedValue(generator = "uuid")
     private String id;
     private String nombre;
     private String descripcion;
-    private String telefono;
+    private String moneda;
+    private boolean estacionamiento;
+    private String website;
     @OneToMany
     List<TipoComida> comida;
+    @OneToMany
+    List<Sucursal> sucursales;
 
 
 }
