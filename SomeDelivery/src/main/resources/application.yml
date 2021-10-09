@@ -1,0 +1,21 @@
+
+spring:
+  #Configuracion MySQL
+  datasource:
+    url: jdbc:mysql://127.0.0.1:2451/SomeDelivery
+    username: root
+    password: test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #Configuracion Creacion de tablas (Hibernate)
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  #Que thymeleaf no guarde datos en cache
+  thymeleaf:
+    cache: false
+server:
+  port: 8080
